@@ -3,4 +3,11 @@
     <color name="colorPrimary">#f10028</color>
     <color name="colorPrimaryDark">#a3090e</color>
     <color name="colorAccent">#b0bec5</color>
+    <color name="keyPadAccent">#ECECEC</color>
+    <color name="startCallButton">#118B06</color>
+    <color name="endCallButton">#D70000</color>
+    <color name="navMenuSelectButton">#af1108</color> <!--#013e77-->
+    <color name="navMenuButtonAccent">#747474</color>
+    <color name="navMenu">#F8F8F8</color>
+    <color name="callScreenButton">#595959</color>
 </resources>

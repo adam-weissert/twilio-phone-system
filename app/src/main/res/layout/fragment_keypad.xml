@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keypad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".KeypadFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F3F3F3"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:minHeight="48dp"
+            android:paddingTop="10dp"
+            android:textSize="40sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            tools:inputType="phone"
+            tools:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonOne"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="1"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonTwo"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="2"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonTwoLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignBottom="@id/buttonTwo"
+                    android:gravity="center"
+                    android:text="ABC"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonThree"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="3"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonThreeLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="DEF"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonFour"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="4"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonFourLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="GHI"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonFive"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="5"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonFiveLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="JKL"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonSix"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="6"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonSixLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="MNO"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonSeven"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="7"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonSevenLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="PQRS"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonEight"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="8"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonEightLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="TUV"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonNine"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="9"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/buttonNineLetters"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="WXYZ"
+                    android:textColor="#4D4C4C" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonAsterisk"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="*"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonZero"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/buttonHash"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="#"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:gravity="center">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/startCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/startCallButton"
+                    android:clickable="true"
+                    android:contentDescription="Start Call"
+                    android:elevation="0dp"
+                    android:focusable="true"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    android:src="@drawable/ic_call_white_24dp"
+                    app:rippleColor="#13E300" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonDel"
+                    android:layout_width="57dp"
+                    android:layout_height="39dp"
+                    android:background="@drawable/ic_delete"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:longClickable="true"
+                    android:soundEffectsEnabled="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

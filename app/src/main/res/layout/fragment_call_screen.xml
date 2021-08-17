@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".CallScreenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:weightSum="2">
+
+
+        <EditText
+            android:id="@+id/callerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="#F3F3F3"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="1 (234) 567-8900"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#78909C"
+            android:textSize="40sp" />
+
+        <Chronometer
+            android:id="@+id/callScreenChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical">
+
+                <Button
+                    android:id="@+id/callScreenMute"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/ic_mic_white_off_24dp"
+                    android:backgroundTint="@color/callScreenButton"
+                    android:focusableInTouchMode="false"
+                    android:labelFor="@id/callScreenMuteText"
+                    tools:clickable="true" />
+
+                <TextView
+                    android:id="@+id/callScreenMuteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/callScreenMute"
+                    android:layout_marginBottom="-25dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:labelFor="@id/callScreenMute"
+                    android:text="Mute"
+                    android:textColor="@color/callScreenButton" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical">
+
+                <Button
+                    android:id="@+id/callScreenKeypad"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/ic_keypad"
+                    android:backgroundTint="@color/callScreenButton"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    tools:labelFor="@id/callScreenKeypadText" />
+
+                <TextView
+                    android:id="@+id/callScreenKeypadText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/callScreenKeypad"
+                    android:layout_marginBottom="-25dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:labelFor="@id/callScreenKeypad"
+                    android:text="Keypad"
+                    android:textColor="@color/callScreenButton" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical">
+
+                <Button
+                    android:id="@+id/callScreenSpeaker"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/ic_speaker"
+                    android:backgroundTint="@color/callScreenButton"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:labelFor="@id/callScreenSpeakerText" />
+
+                <TextView
+                    android:id="@+id/callScreenSpeakerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/callScreenSpeaker"
+                    android:layout_marginBottom="-25dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:labelFor="@id/callScreenSpeaker"
+                    android:text="Speaker" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_horizontal|top"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/callScreenEndCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="@color/endCallButton"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:foregroundGravity="top|center_horizontal"
+            android:scaleX="1.25"
+            android:scaleY="1.25"
+            app:rippleColor="#FFA7A7"
+            app:srcCompat="@drawable/ic_call_end_white_24dp" />
+    </LinearLayout>
+
+</LinearLayout>
